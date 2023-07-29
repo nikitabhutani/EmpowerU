@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   animated_splash_screen: 
   page_transition:
+  sign_in_button: ^3.0.0
 
 dev_dependencies:
   flutter_test:
