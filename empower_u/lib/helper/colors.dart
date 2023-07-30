@@ -2,5 +2,5 @@
 import 'package:flutter/material.dart';
 
 Color appBar = Color.fromRGBO(1, 1, 1, 1);
-const BackgroundColor=Colors.blue;
+const BackgroundColor=Colors.white;
 

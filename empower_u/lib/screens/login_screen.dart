@@ -1,6 +1,8 @@
 import 'package:empower_u/helper/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/auth_ui.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -15,11 +17,22 @@ class LoginScreen extends StatelessWidget {
             color: Colors.white,
             child:Column(children: [
               SizedBox(height:100),
-              Image.asset("assets/images/logo.jpeg"),
+              Image.asset("assets/images/logo.jpeg",
+              height:250,
+              width:250,
+              ),
               SizedBox(height:10,),
              
             ],)
           ),),
+          Expanded(child: Container(
+            child:AuthUi(),
+          ),),
+          Padding(
+    padding:const EdgeInsets.all(8.0),
+    child:Text('If you continue,you are accepting \n Terms And Conditions and Privacy Policy',
+    textAlign:TextAlign.center,
+    style:TextStyle(color:Colors.white,fontSize: 10)),)
         ],
       )
     );
