@@ -1,3 +1,4 @@
+import 'package:empower_u/screens/size_configs.dart';
 import 'package:flutter/material.dart';
 
 class SelectRole extends StatelessWidget {
@@ -5,11 +6,16 @@ class SelectRole extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
       ),
-      body: Text("Roles"),
+      body: Container(
+        height: getProportionateScreenHeight(40),
+        width: getProportionateScreenWidth(200),
+        decoration: BoxDecoration(),
+      ),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:empower_u/screens/authentication/phone_authentication.dart';
 import 'package:empower_u/screens/login_screen.dart';
 import 'package:empower_u/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: LoginScreen(),
+      //initialRoute: LoginScreen.id,
+      routes: {
+        LoginScreen.id: (context) => const LoginScreen(),
+        PhoneAuthScreen.id: (context) => const PhoneAuthScreen(),
+      },
     );
   }
 }
